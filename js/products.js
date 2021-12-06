@@ -1,6 +1,5 @@
-const endpoint = "http://localhost:5000"
 let shoes = [];
-fetch(`${endpoint}/products`)
+fetch(`${ENDPOINT}/products`)
 .then(response => {
    return response.json();
 })

@@ -1,12 +1,11 @@
 
-const endpoint = "http://localhost:5000"
 const urlParams = new URLSearchParams(window.location.search);
 const product = urlParams.get("product");
 const color = urlParams.get("color");
 const size = urlParams.get("size");
 
 let shoe = [];
-let url = `${endpoint}/product/${product}?color=${color}${size?`&size=${size}`:''}`;
+let url = `${ENDPOINT}/product/${product}?color=${color}${size?`&size=${size}`:''}`;
 fetch(url)
     .then(response => {
         return response.json();
