@@ -319,6 +319,7 @@ body{
     width:100%;
     background-position:center center;
     background-size:cover;
+    margin: 0 auto;
 }
 .slide-wrapper{display:inline;}
 .slide-wrapper .container{padding:0;}
@@ -363,7 +364,6 @@ body{
     display:block; margin-bottom:5px; border:1px solid #00a199; 
     margin-bottom: 5px;}
     
-}
 .carousel-indicators li.active{
     margin-bottom:5px; background:#00a199;
     
@@ -384,7 +384,7 @@ body{
 	color: #0c0116;
 	font-weight: 400;
 	margin-left: 0px;
-    padding-bottom: 30px;
+    padding-bottom: 3px;
 }
 
 .collection_section_2{
@@ -473,6 +473,11 @@ body{
 	font-size: 16pt;	
 	margin-top: 35px;
     margin-bottom: 90px;
+}
+.seemore_bt:disabled, button[disabled]{
+    background-color: gray;
+    color: black;
+    cursor: default;
 }
 
 .collectipn_section_3{ width: 100%; float: left; padding-top: 0px;}
@@ -794,4 +799,68 @@ a:hover {
     width: 100%;
     height: auto;
     background: #0c0116;
+}
+select {
+    display: none;
+}
+.btn-wrapper  {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.btn-wrapper button{
+    margin: 0 5px 0 5px;
+    width: 50px;
+}
+.product-counter{
+    width: 5em;
+    display: block;
+}
+.tile{
+    padding: 16px;
+    border-radius: 4px;
+    border: 1px solid #eaeaec;
+    margin: 5px auto;
+}
+.remove-btn{
+   background-color:  #ff4e5b;
+   color: white;
+   border-radius: 4px;
+   padding: 5px;
+   margin-top: 5px;
+}
+.show-ribbon{
+    display: block;
+    background-color:  #ff4e5b;
+    color: white;
+    border-radius: 4px;
+    padding: 5px;
+    margin-top: 5px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.hide{
+    display: none;
+}
+.empty-cart{
+    width: 100%;
+	float: left;
+	font-size: 14pt;
+	color: #000;
+	text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.select-wrapper{
+    display: flex;
+    width: 100%;
+}
+.checkout-wrapper{
+    float: right;
+    padding: 16px;
+    border-radius: 4px;
+    border: 1px solid #eaeaec;
+    margin: 5px auto;
 }
